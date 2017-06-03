@@ -1,4 +1,4 @@
-FROM ikasetebo/nginx:v0.01
+FROM ikasetebo/nginx:v1.00-16.04
 
 WORKDIR /etc/nginx/sites-available/
 COPY nginx-conf/sites-available/default default
@@ -10,9 +10,12 @@ RUN apt-get update && apt-get install -y php \
     -y php-cgi \
     -y php-mysql \
     -y php-cli \
+    -y php-curl \
     -y php-mbstring \
     -y unzip \
     -y ufw \
+    -y apt-utils \
+    -y dialog \
     -y dos2unix \
     && dos2unix ./entrypoint.sh \
     && curl -sS https://getcomposer.org/installer -o composer-setup.php \
@@ -24,7 +27,7 @@ COPY php-conf/fpm/php.ini php.ini
 
 WORKDIR /
 
-VOLUME ["/etc/nginx/sites-available", "/etc/php/7.1", "/usr/share/nginx/html"]
+VOLUME ["/shared/","/etc/nginx/", "/etc/php/7.1/fpm", "/usr/share/nginx/html"]
 
 EXPOSE 80 443 9000
 
