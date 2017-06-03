@@ -27,7 +27,7 @@ COPY php-conf/fpm/php.ini php.ini
 
 WORKDIR /
 
-VOLUME ["/shared/","/etc/nginx/", "/etc/php/7.1/fpm", "/usr/share/nginx/html"]
+VOLUME ["/shared/", "/etc/nginx/", "/etc/php/7.1/fpm", "/usr/share/nginx/html"]
 
 EXPOSE 80 443 9000
 
