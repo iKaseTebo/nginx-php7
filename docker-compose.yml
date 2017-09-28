@@ -1,8 +1,8 @@
 version: '3'
 services:
   nginx:
-    container_name: nginx-php7-v0.01
-    image: ikasetebo/nginx-php7:v0.01
+    container_name: nginx-php7-v0.04
+    image: ikasetebo/nginx-php7:v0.04
     networks:
       - app_bridge
     ports:
