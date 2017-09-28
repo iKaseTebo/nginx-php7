@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87c26cb7-54a0-4074-89e6-7f1498b6e978" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Laravel.iml" afterPath="$PROJECT_DIR$/.idea/Laravel.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker-compose.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nginx-conf/conf/conf.d/default.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nginx-conf/conf/general/default.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nginx-conf/conf/general/nginx.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nginx-conf/conf/general/nginx2.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nginx-conf/conf/general/nginx_http2.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nginx-conf/conf/general/reverseDefault.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nginx-conf/conf/general/reverse_proxy.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nginx-conf/conf/general/template.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nginx-conf/conf/nginx/nginx.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nginx-conf/ssl/nginx.crt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nginx-conf/ssl/nginx.key" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dockerfile" afterPath="$PROJECT_DIR$/Dockerfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entrypoint/entrypoint.sh" afterPath="$PROJECT_DIR$/entrypoint/entrypoint.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nginx-conf/sites-available/default" afterPath="$PROJECT_DIR$/nginx-conf/sites-available/default" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +35,18 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="527">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.conf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nginx-conf/conf/conf.d/default.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -32,18 +55,18 @@
       <file leaf-file-name="default" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nginx-conf/sites-available/default">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="php.ini" pinned="false" current-in-tab="true">
+      <file leaf-file-name="php.ini" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php-conf/fpm/php.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="141" column="22" lean-forward="true" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
+            <state relative-caret-position="357">
+              <caret line="126" column="22" lean-forward="false" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -63,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/entrypoint/entrypoint.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,18 +121,19 @@
         <option value="$PROJECT_DIR$/entrypoint.sh" />
         <option value="$PROJECT_DIR$/Image/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/Dockerfiles/Dockerfile-debian" />
         <option value="$PROJECT_DIR$/default-sites-available" />
         <option value="$PROJECT_DIR$/php-conf/php.ini" />
         <option value="$PROJECT_DIR$/Dockerfiles/Dockerfile-nginx" />
-        <option value="$PROJECT_DIR$/nginx-conf/sites-available/default" />
         <option value="$PROJECT_DIR$/Dockerfiles/nginx-conf/sites-available/default1" />
         <option value="$PROJECT_DIR$/app/index.php" />
         <option value="$PROJECT_DIR$/Dockerfiles/app/index.html" />
         <option value="$PROJECT_DIR$/Dockerfiles/nginx-conf/sites-available/default" />
         <option value="$PROJECT_DIR$/Dockerfiles/Dockerfile" />
         <option value="$PROJECT_DIR$/Dockerfiles/entrypoint/entrypoint.sh" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/nginx-conf/sites-available/default" />
+        <option value="$PROJECT_DIR$/nginx-conf/conf/conf.d/default.conf" />
       </list>
     </option>
   </component>
@@ -121,10 +145,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="92" />
-    <option name="y" value="66" />
-    <option name="width" value="1547" />
-    <option name="height" value="830" />
+    <option name="x" value="315" />
+    <option name="y" value="147" />
+    <option name="width" value="1096" />
+    <option name="height" value="581" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -192,6 +216,17 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
       <config-file value="" />
       <node-interpreter value="project" />
@@ -276,19 +311,19 @@
       <workItem from="1495218165001" duration="10611000" />
       <workItem from="1495462911859" duration="6794000" />
       <workItem from="1495574422101" duration="2967000" />
-      <workItem from="1506622724499" duration="740000" />
+      <workItem from="1506622724499" duration="3733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66806000" />
+    <option name="totallyTimeSpent" value="69799000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="92" y="66" width="1547" height="830" extended-state="0" />
+    <frame x="315" y="147" width="1096" height="581" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3357283" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47592592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -318,7 +353,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Dockerfile" />
     <entry file="file://$PROJECT_DIR$/Dockerfiles/Dockerfile-ubuntu" />
     <entry file="file://$PROJECT_DIR$/Dockerfiles/Dockerfile-nginx" />
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
@@ -430,14 +464,6 @@
     <entry file="file://$PROJECT_DIR$/Dockerfiles/Dockerfile-nginx" />
     <entry file="file://$PROJECT_DIR$/Dockerfiles/entrypoint/entrypoint.sh" />
     <entry file="file://$PROJECT_DIR$/Dockerfiles/Dockerfile" />
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -449,23 +475,39 @@
     <entry file="file://$PROJECT_DIR$/entrypoint/entrypoint.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nginx-conf/sites-available/default">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php-conf/fpm/php.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="141" column="22" lean-forward="true" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
+        <state relative-caret-position="357">
+          <caret line="126" column="22" lean-forward="false" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx-conf/sites-available/default">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx-conf/conf/conf.d/default.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding />
         </state>
       </provider>

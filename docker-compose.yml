@@ -1,0 +1,20 @@
+version: '3'
+services:
+  nginx:
+    container_name: nginx-php7-v0.01
+    image: ikasetebo/nginx-php7:v0.01
+    networks:
+      - app_bridge
+    ports:
+      - "8080:80"
+      - "443:443"
+    volumes:
+      - ./app/:/usr/share/nginx/html/
+      - ./nginx-conf/conf/conf.d/:/etc/nginx/conf.d/
+      - ./nginx-conf/sites-available/default:/etc/nginx/sites-available/default
+networks:
+  app_bridge:
+    driver: bridge
+
+
+
